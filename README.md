@@ -1,6 +1,47 @@
 # ExcavatorProject
 
-ROS 2 Humble workspace for the Unreal Engine 5.8 excavator simulator.
+Complete collaborative source project for the ROS 2 Humble and Unreal Engine
+5.8 excavator simulator.
+
+## Repository contents
+
+```text
+src/                         ROS 2 messages, launch files, teleop, URDF, meshes
+scripts/                     Build and local startup scripts
+unreal/UnrealTest/Config     Unreal project configuration
+unreal/UnrealTest/Content    Mars world, excavator, characters, and assets
+unreal/UnrealTest/Plugins    ExcavatorROS source plugin
+unreal/UnrealTest/Source     Unreal C++ project source
+unreal/UnrealTest/SourceArt  Editable billboard source artwork
+```
+
+`SourceArt` also contains the Mars-base interchange files and the resume source
+used by the in-world billboards. This repository is private and contains
+project-specific licensed assets; keep access limited to collaborators who are
+working on this project and do not make the repository public without reviewing
+the licenses for those assets.
+
+Generated `build`, `install`, `log`, `Binaries`, `Intermediate`, `Saved`, and
+`DerivedDataCache` directories are intentionally excluded. They are recreated
+locally and are not needed for collaboration. Unreal Engine itself is also not
+stored in this repository; collaborators must install a compatible Unreal
+Engine 5.8 build separately.
+
+## Clone and prepare
+
+Install Git LFS before cloning, then run:
+
+```bash
+git lfs install
+git clone git@github.com:JustinChuangGit/ExcavatorProject.git
+cd ExcavatorProject
+git lfs pull
+./scripts/build_workspace.sh
+```
+
+Requirements are Ubuntu 22.04, ROS 2 Humble, `rosdep`, `colcon`, Git LFS, and
+Unreal Engine 5.8. The ROS build script installs declared ROS dependencies with
+`rosdep` and builds the workspace with Ubuntu's system Python 3.10.
 
 ## Start locally without the website
 
@@ -10,17 +51,24 @@ and availability watchdog before launching the Mars map, so nothing is made
 public.
 
 ```bash
-~/excavator_ros2_ws/scripts/start_local_unreal_ros.sh
+./scripts/start_local_unreal_ros.sh
 ```
 
-The launcher waits for rosbridge on port 9090 and for Unreal to finish loading
-the Mars excavation map before reporting success. To return to public browser
-mode later, run `~/start-excavator-live.sh`.
+The launcher locates UnrealEditor in `PATH`, `~/Applications/UnrealEngine`, or
+`~/UnrealEngine`. For a different installation path, run:
+
+```bash
+UNREAL_EDITOR_PATH=/path/to/UnrealEditor ./scripts/start_local_unreal_ros.sh
+```
+
+It waits for rosbridge on port 9090 and for Unreal to finish loading the Mars
+excavation map before reporting success. It does not start the website, Pixel
+Streaming, Cloudflare tunnel, or public watchdog.
 
 ## Build
 
 ```bash
-~/excavator_ros2_ws/scripts/build_workspace.sh
+./scripts/build_workspace.sh
 ```
 
 The script deliberately selects Ubuntu's Python 3.10 so an active Conda or
@@ -43,14 +91,14 @@ ws://127.0.0.1:9090/
 Plug the controller in and start the complete simulator ROS stack:
 
 ```bash
-~/excavator_ros2_ws/scripts/start_sim.sh
+./scripts/start_sim.sh
 ```
 
 To launch rosbridge, controller input, robot-state publishing, live hydraulic
 markers, and RViz together:
 
 ```bash
-~/excavator_ros2_ws/scripts/start_full_sim.sh
+./scripts/start_full_sim.sh
 ```
 
 Controls:
@@ -88,14 +136,14 @@ at their current angles; it does not recenter the excavator.
 Start the ROS stack:
 
 ```bash
-~/excavator_ros2_ws/scripts/start_sim.sh
+./scripts/start_sim.sh
 ```
 
 Then run the Mars map:
 
 ```bash
-~/Applications/UnrealEngine/Engine/Binaries/Linux/UnrealEditor \
-  ~/Documents/Unreal\ Projects/UnrealTest/UnrealTest.uproject \
+"/path/to/UnrealEditor" \
+  "$(pwd)/unreal/UnrealTest/UnrealTest.uproject" \
   /Game/ExcavatorSim/Maps/Mars_ExcavationSite \
   -game -windowed -ResX=1280 -ResY=720 -log
 ```
@@ -132,7 +180,7 @@ In another terminal:
 
 ```bash
 source /opt/ros/humble/setup.bash
-source ~/excavator_ros2_ws/install/setup.bash
+source ./install/setup.bash
 ros2 run excavator_teleop keyboard
 ```
 
@@ -172,5 +220,5 @@ axes to zero within 0.5 seconds.
 The full system design is in:
 
 ```text
-~/Documents/Unreal Projects/UnrealTest/Docs/ROS_ARCHITECTURE.md
+unreal/UnrealTest/Docs/ROS_ARCHITECTURE.md
 ```

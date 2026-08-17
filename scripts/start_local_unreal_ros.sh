@@ -6,8 +6,7 @@ readonly ROS_WORKSPACE="$(cd -- "${SCRIPT_DIRECTORY}/.." && pwd)"
 readonly ROS_START_SCRIPT="${ROS_WORKSPACE}/scripts/start_full_sim.sh"
 readonly ROS_SERVICE="excavator-ros-stack.service"
 readonly LOCAL_UNREAL_SERVICE="excavator-unreal-local.service"
-readonly UNREAL_EDITOR="/home/justin/Applications/UnrealEngine/Engine/Binaries/Linux/UnrealEditor"
-readonly UNREAL_PROJECT="/home/justin/Documents/Unreal Projects/UnrealTest/UnrealTest.uproject"
+readonly DEFAULT_UNREAL_PROJECT="${ROS_WORKSPACE}/unreal/UnrealTest/UnrealTest.uproject"
 readonly UNREAL_MAP="/Game/ExcavatorSim/Maps/Mars_ExcavationSite"
 readonly -a PUBLIC_SERVICES=(
   "excavator-watchdog.timer"
@@ -25,6 +24,33 @@ log() {
 fail() {
   printf '\nERROR: %s\n' "$*" >&2
   exit 1
+}
+
+find_unreal_editor() {
+  local user_home=""
+  local candidate=""
+
+  if [[ -n "${UNREAL_EDITOR_PATH:-}" ]]; then
+    printf '%s\n' "$UNREAL_EDITOR_PATH"
+    return 0
+  fi
+
+  if command -v UnrealEditor >/dev/null 2>&1; then
+    command -v UnrealEditor
+    return 0
+  fi
+
+  user_home="$(getent passwd "$(id -u)" | cut -d: -f6)"
+  for candidate in \
+    "${user_home}/Applications/UnrealEngine/Engine/Binaries/Linux/UnrealEditor" \
+    "${user_home}/UnrealEngine/Engine/Binaries/Linux/UnrealEditor"; do
+    if [[ -x "$candidate" ]]; then
+      printf '%s\n' "$candidate"
+      return 0
+    fi
+  done
+
+  return 1
 }
 
 wait_for_service() {
@@ -49,7 +75,7 @@ wait_for_port() {
   local deadline=$((SECONDS + timeout_seconds))
 
   while (( SECONDS < deadline )); do
-    if ss -Hltn "sport = :${port}" | rg --quiet ":${port}\b"; then
+    if ss -Hltn "sport = :${port}" | grep --extended-regexp --quiet ":${port}([[:space:]]|$)"; then
       return 0
     fi
     sleep 1
@@ -66,7 +92,7 @@ wait_for_map() {
   while (( SECONDS < deadline )); do
     if journalctl --user -u "$LOCAL_UNREAL_SERVICE" \
       --since "$started_at" --no-pager 2>/dev/null |
-      rg --quiet 'Load map complete /Game/ExcavatorSim/Maps/Mars_ExcavationSite'; then
+      grep --fixed-strings --quiet 'Load map complete /Game/ExcavatorSim/Maps/Mars_ExcavationSite'; then
       return 0
     fi
     sleep 2
@@ -76,8 +102,10 @@ wait_for_map() {
 }
 
 [[ -x "$ROS_START_SCRIPT" ]] || fail "Missing ROS launcher: ${ROS_START_SCRIPT}"
-[[ -x "$UNREAL_EDITOR" ]] || fail "Missing Unreal executable: ${UNREAL_EDITOR}"
-[[ -f "$UNREAL_PROJECT" ]] || fail "Missing Unreal project: ${UNREAL_PROJECT}"
+unreal_editor="$(find_unreal_editor || true)"
+unreal_project="${UNREAL_PROJECT_PATH:-$DEFAULT_UNREAL_PROJECT}"
+[[ -x "$unreal_editor" ]] || fail "UnrealEditor was not found. Set UNREAL_EDITOR_PATH to its full path."
+[[ -f "$unreal_project" ]] || fail "Missing Unreal project: ${unreal_project}"
 
 export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
 export DISPLAY="${DISPLAY:-:1}"
@@ -125,8 +153,8 @@ else
     --property=Restart=on-failure \
     --property=RestartSec=5 \
     --property=KillMode=control-group \
-    "$UNREAL_EDITOR" \
-    "$UNREAL_PROJECT" \
+    "$unreal_editor" \
+    "$unreal_project" \
     "$UNREAL_MAP" \
     -game \
     -windowed \

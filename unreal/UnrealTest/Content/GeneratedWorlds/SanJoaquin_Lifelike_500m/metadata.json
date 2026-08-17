@@ -1,0 +1,193 @@
+{
+  "area_name": "SanJoaquin_Lifelike_500m",
+  "coordinate_space": "local_meters",
+  "coordinate_transform": {
+    "array_origin": "row 0 is north/max_y; col 0 is west/min_x",
+    "input_xy_to_local_meters": "local_x=x-world_origin.x, local_y=y-world_origin.y",
+    "input_z_to_local_meters": "local_z=z-min_elevation_m",
+    "unreal_cm": "local_meters * unreal.units_per_meter"
+  },
+  "elevation_range_m": 9.494239807128906,
+  "errors": [],
+  "feature_inference": {
+    "building_count": 62,
+    "cropped_lidar_points": 19735216,
+    "method": "lidar_ndsm_satellite_semantic_fusion_v1",
+    "notes": [
+      "Building placement is image plus LiDAR height, not LAS class 6.",
+      "Image semantics are deterministic color/texture rules because no deep model is installed locally yet.",
+      "The detector is isolated here so a SAM/SegFormer/YOLO satellite model can replace spectral_masks() later."
+    ],
+    "outputs": {
+      "building_instances": "/home/justin/Documents/pointCloudToUnreal/data/exports/GeneratedWorlds/SanJoaquin_Lifelike_500m/instances/building_instances.csv",
+      "road_instances": "/home/justin/Documents/pointCloudToUnreal/data/exports/GeneratedWorlds/SanJoaquin_Lifelike_500m/instances/road_instances.csv",
+      "scene_overlay": "/home/justin/Documents/pointCloudToUnreal/data/exports/GeneratedWorlds/SanJoaquin_Lifelike_500m/previews/scene_feature_overlay.png",
+      "terrain_mesh_obj": "/home/justin/Documents/pointCloudToUnreal/data/exports/GeneratedWorlds/SanJoaquin_Lifelike_500m/terrain/terrain_mesh_253.obj",
+      "tree_instances": "/home/justin/Documents/pointCloudToUnreal/data/exports/GeneratedWorlds/SanJoaquin_Lifelike_500m/instances/tree_instances.csv"
+    },
+    "road_slab_count": 0,
+    "satellite_image_for_inference": "/home/justin/Documents/pointCloudToUnreal/data/exports/GeneratedWorlds/SanJoaquin_Lifelike_500m/satellite/satellite_rgb_z19.png",
+    "terrain_mesh_vertices_per_side": 253,
+    "total_lidar_points_streamed": 44462724,
+    "tree_count": 1004,
+    "unreal_reference_image": "/home/justin/Documents/pointCloudToUnreal/data/exports/GeneratedWorlds/SanJoaquin_Lifelike_500m/satellite/satellite_reference_mirror_x.png",
+    "unreal_reference_image_is_mirror_x": true
+  },
+  "fusion": {
+    "satellite_semantics": {
+      "building_instances_from_satellite": 190,
+      "method": "connected_components_on_satellite_semantic_masks_v1",
+      "source": "/home/justin/Documents/pointCloudToUnreal/data/exports/GeneratedWorlds/SanJoaquin_Lifelike_500m/satellite/satellite_semantics.json"
+    }
+  },
+  "generated_file_paths": {
+    "building_footprints": "vectors/building_footprints.geojson",
+    "building_instances": "instances/building_instances.csv",
+    "building_mask": "masks/building_mask.png",
+    "building_mask_preview": "previews/building_mask_preview.png",
+    "dem_preview": "previews/dem_preview.png",
+    "metadata": "metadata.json",
+    "ndsm_height_preview": "previews/ndsm_height_preview.png",
+    "road_instances": "instances/road_instances.csv",
+    "road_mask": "masks/road_mask.png",
+    "road_mask_preview": "previews/road_mask_preview.png",
+    "road_vectors": "vectors/road_vectors.geojson",
+    "scene_feature_overlay": "previews/scene_feature_overlay.png",
+    "scene_features": "vectors/scene_features.json",
+    "shrub_density_mask": "masks/shrub_density.png",
+    "terrain_dem": "terrain_dem.tif",
+    "terrain_heightmap": "terrain_heightmap.r16",
+    "terrain_mesh_obj": "terrain/terrain_mesh_253.obj",
+    "tree_density_mask": "masks/tree_density.png",
+    "tree_height_mask": "masks/tree_height.png",
+    "tree_instances": "instances/tree_instances.csv",
+    "tree_points_preview": "previews/tree_points_preview.png",
+    "unreal_import_readme": "unreal/README_IMPORT.md",
+    "unreal_import_script": "unreal/import_generated_world.py",
+    "vegetation_preview": "previews/vegetation_preview.png",
+    "water_mask": "masks/water_mask.png",
+    "water_mask_preview": "previews/water_mask_preview.png",
+    "water_vectors": "vectors/water_vectors.geojson"
+  },
+  "heightmap_size": 1009,
+  "input_files": [
+    "/home/justin/Documents/pointCloudToUnreal/data/locations/SanJoaquin_Lifelike_500m/input_laz/USGS_LPC_CA_SanJoaquin_2021_A21_s63925w20725.laz",
+    "/home/justin/Documents/pointCloudToUnreal/data/locations/SanJoaquin_Lifelike_500m/input_laz/USGS_LPC_CA_SanJoaquin_2021_A21_s63925w20750.laz",
+    "/home/justin/Documents/pointCloudToUnreal/data/locations/SanJoaquin_Lifelike_500m/input_laz/USGS_LPC_CA_SanJoaquin_2021_A21_s63950w20725.laz",
+    "/home/justin/Documents/pointCloudToUnreal/data/locations/SanJoaquin_Lifelike_500m/input_laz/USGS_LPC_CA_SanJoaquin_2021_A21_s63950w20750.laz"
+  ],
+  "location": {
+    "center_x_m": 1949013.4142708282,
+    "center_y_m": 632508.5486749078,
+    "lat": 36.526159,
+    "lidar_crs": "EPSG:6422",
+    "lon": -119.569331,
+    "origin_x_m": 1948513.4142708282,
+    "origin_y_m": 632008.5486749078,
+    "radius_m": 500.0,
+    "source_units_to_meters": 0.30480060960121924,
+    "source_x": 6394388.176653542,
+    "source_y": 2075155.1301109265
+  },
+  "max_elevation_m": 95.8686294555664,
+  "min_elevation_m": 86.3743896484375,
+  "output_bounds": {
+    "max_x": 1949521.4142708282,
+    "max_y": 633016.5486749078,
+    "min_x": 1948513.4142708282,
+    "min_y": 632008.5486749078
+  },
+  "output_crs": "EPSG:6422",
+  "pixel_resolution_m": 1.0,
+  "satellite": {
+    "image": "/home/justin/Documents/pointCloudToUnreal/data/locations/SanJoaquin_Lifelike_500m/satellite/satellite_rgb.png",
+    "image_size_px": {
+      "height": 1042,
+      "width": 1042
+    },
+    "masks": {
+      "satellite_building_mask": "/home/justin/Documents/pointCloudToUnreal/data/locations/SanJoaquin_Lifelike_500m/satellite_semantics/satellite_building_mask.png",
+      "satellite_road_surface_mask": "/home/justin/Documents/pointCloudToUnreal/data/locations/SanJoaquin_Lifelike_500m/satellite_semantics/satellite_road_surface_mask.png",
+      "satellite_vegetation_mask": "/home/justin/Documents/pointCloudToUnreal/data/locations/SanJoaquin_Lifelike_500m/satellite_semantics/satellite_vegetation_mask.png",
+      "satellite_water_mask": "/home/justin/Documents/pointCloudToUnreal/data/locations/SanJoaquin_Lifelike_500m/satellite_semantics/satellite_water_mask.png",
+      "semantic_overlay": "/home/justin/Documents/pointCloudToUnreal/data/locations/SanJoaquin_Lifelike_500m/satellite_semantics/satellite_semantic_overlay.png"
+    },
+    "model": "heuristic_satellite_semantics_v1",
+    "note": "This is the replaceable image-model interface. Swap this module for SAM/SegFormer/YOLO-style inference for production.",
+    "satellite_metadata": {
+      "bounds_wgs84": {
+        "east": -119.5637416040632,
+        "north": 36.530650555874956,
+        "south": 36.52166744412504,
+        "west": -119.57492039593681
+      },
+      "image": "/home/justin/Documents/pointCloudToUnreal/data/locations/SanJoaquin_Lifelike_500m/satellite/satellite_rgb.png",
+      "image_size_px": {
+        "height": 1042,
+        "width": 1042
+      },
+      "provider": "ArcGIS World Imagery",
+      "provider_url_template": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+      "tile_count": 25,
+      "tile_range": {
+        "max_x": 22004,
+        "max_y": 51234,
+        "min_x": 22000,
+        "min_y": 51230
+      },
+      "zoom": 17
+    }
+  },
+  "source_bounds": {
+    "max_x": 1949961.8999238,
+    "max_y": 633223.266446533,
+    "min_x": 1948437.8999238,
+    "min_y": 631699.266446533
+  },
+  "source_crs": "EPSG:6422",
+  "stats": {
+    "building_count": 62,
+    "building_points": 0,
+    "feature_inference_cropped_lidar_points": 19735216,
+    "ground_points": 20900762,
+    "input_file_count": 4,
+    "input_points_total": 44462724,
+    "loaded_points": 44462724,
+    "road_points": 0,
+    "road_slab_count": 0,
+    "satellite_building_pixels": 161212,
+    "satellite_road_pixels": 270625,
+    "satellite_water_pixels": 3196,
+    "tree_count": 1004,
+    "vegetation_points": 2896791,
+    "water_points": 0
+  },
+  "unreal": {
+    "heightmap_format": "r16_uint16_little_endian",
+    "heightmap_zero_elevation_m": 86.3743896484375,
+    "landscape_location_cm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "units_per_meter": 100.0,
+    "xy_scale": 100.0,
+    "z_scale": 1.8543437123298645
+  },
+  "warnings": [
+    "Converted lidar coordinates/elevations from source units to meters using factor 0.30480060960121924.",
+    "Input bounds exceed configured square heightmap extent; points outside the extent are cropped. Increase heightmap_size or target_resolution_m for a larger area.",
+    "No vegetation classes [3, 4, 5] found. Inferring vegetation candidates from height above ground.",
+    "No class 6 building points found; building outputs are empty placeholders.",
+    "No usable lidar road classification found. road_mask.png is empty; TODO: accept OSM/TIGER/GeoJSON roads.",
+    "No class 9 water points found; water outputs are empty placeholders."
+  ],
+  "world_height_m": 1008.0,
+  "world_origin": {
+    "mode": "manual",
+    "x": 1948513.4142708282,
+    "y": 632008.5486749078,
+    "z_reference_min_elevation_m": 86.3743896484375
+  },
+  "world_width_m": 1008.0
+}

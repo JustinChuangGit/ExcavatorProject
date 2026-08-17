@@ -1,0 +1,10 @@
+std_msgs/Header header
+float32 throttle
+float32 steering
+float32 swing
+float32 boom
+float32 stick
+float32 bucket
+bool emergency_stop
+bool clear_emergency_stop
+bool reset_machine

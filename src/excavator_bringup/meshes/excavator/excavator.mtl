@@ -1,0 +1,23 @@
+newmtl construction_yellow
+Ka 0.18 0.10 0.01
+Kd 0.92 0.55 0.05
+Ks 0.18 0.18 0.16
+Ns 48.0
+d 1.0
+illum 2
+
+newmtl dark_metal
+Ka 0.01 0.01 0.01
+Kd 0.055 0.065 0.075
+Ks 0.22 0.24 0.26
+Ns 72.0
+d 1.0
+illum 2
+
+newmtl hydraulic_metal
+Ka 0.04 0.04 0.04
+Kd 0.25 0.27 0.28
+Ks 0.45 0.47 0.48
+Ns 96.0
+d 1.0
+illum 2

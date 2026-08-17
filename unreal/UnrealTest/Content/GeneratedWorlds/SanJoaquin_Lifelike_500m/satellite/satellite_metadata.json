@@ -1,0 +1,23 @@
+{
+  "bounds_wgs84": {
+    "east": -119.5637416040632,
+    "north": 36.530650555874956,
+    "south": 36.52166744412504,
+    "west": -119.57492039593681
+  },
+  "image": "/home/justin/Documents/pointCloudToUnreal/data/locations/SanJoaquin_Lifelike_500m/satellite/satellite_rgb.png",
+  "image_size_px": {
+    "height": 1042,
+    "width": 1042
+  },
+  "provider": "ArcGIS World Imagery",
+  "provider_url_template": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  "tile_count": 25,
+  "tile_range": {
+    "max_x": 22004,
+    "max_y": 51234,
+    "min_x": 22000,
+    "min_y": 51230
+  },
+  "zoom": 17
+}

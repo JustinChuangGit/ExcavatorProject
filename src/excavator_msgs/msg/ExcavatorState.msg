@@ -1,0 +1,14 @@
+std_msgs/Header header
+bool ros_connected
+bool command_timed_out
+bool emergency_stop
+float32 throttle
+float32 steering
+float32 swing
+float32 boom
+float32 stick
+float32 bucket
+float32 cab_yaw
+float32 boom_angle
+float32 stick_angle
+float32 bucket_angle

@@ -1,0 +1,96 @@
+{
+  "area_name": "TestArea",
+  "coordinate_space": "local_meters",
+  "coordinate_transform": {
+    "array_origin": "row 0 is north/max_y; col 0 is west/min_x",
+    "input_xy_to_local_meters": "local_x=x-world_origin.x, local_y=y-world_origin.y",
+    "input_z_to_local_meters": "local_z=z-min_elevation_m",
+    "unreal_cm": "local_meters * unreal.units_per_meter"
+  },
+  "elevation_range_m": 25.569976806640625,
+  "errors": [],
+  "generated_file_paths": {
+    "building_footprints": "vectors/building_footprints.geojson",
+    "building_instances": "instances/building_instances.csv",
+    "building_mask": "masks/building_mask.png",
+    "building_mask_preview": "previews/building_mask_preview.png",
+    "dem_preview": "previews/dem_preview.png",
+    "metadata": "metadata.json",
+    "road_mask": "masks/road_mask.png",
+    "road_mask_preview": "previews/road_mask_preview.png",
+    "road_vectors": "vectors/road_vectors.geojson",
+    "shrub_density_mask": "masks/shrub_density.png",
+    "terrain_dem": "terrain_dem.tif",
+    "terrain_heightmap": "terrain_heightmap.r16",
+    "tree_density_mask": "masks/tree_density.png",
+    "tree_height_mask": "masks/tree_height.png",
+    "tree_instances": "instances/tree_instances.csv",
+    "tree_points_preview": "previews/tree_points_preview.png",
+    "unreal_import_readme": "unreal/README_IMPORT.md",
+    "unreal_import_script": "unreal/import_generated_world.py",
+    "vegetation_preview": "previews/vegetation_preview.png",
+    "water_mask": "masks/water_mask.png",
+    "water_mask_preview": "previews/water_mask_preview.png",
+    "water_vectors": "vectors/water_vectors.geojson"
+  },
+  "heightmap_size": 2017,
+  "input_files": [
+    "/home/justin/Documents/pointCloudToUnreal/data/input_laz/USGS_LPC_CA_SanJoaquin_2021_A21_s63950w20700.laz"
+  ],
+  "max_elevation_m": 319.04998779296875,
+  "min_elevation_m": 293.4800109863281,
+  "output_bounds": {
+    "max_x": 6397016.01,
+    "max_y": 2072016.01,
+    "min_x": 6395000.01,
+    "min_y": 2070000.01
+  },
+  "output_crs": null,
+  "pixel_resolution_m": 1.0,
+  "source_bounds": {
+    "max_x": 6397500.0,
+    "max_y": 2072500.0,
+    "min_x": 6395000.01,
+    "min_y": 2070000.01
+  },
+  "source_crs": null,
+  "stats": {
+    "building_count": 0,
+    "building_points": 0,
+    "ground_points": 4125999,
+    "input_file_count": 1,
+    "input_points_total": 10493272,
+    "loaded_points": 10493272,
+    "road_points": 0,
+    "tree_count": 10412,
+    "vegetation_points": 2421389,
+    "water_points": 0
+  },
+  "unreal": {
+    "heightmap_format": "r16_uint16_little_endian",
+    "heightmap_zero_elevation_m": 293.4800109863281,
+    "landscape_location_cm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "units_per_meter": 100.0,
+    "xy_scale": 100.0,
+    "z_scale": 4.994136095046997
+  },
+  "warnings": [
+    "Input bounds exceed configured square heightmap extent; points outside the extent are cropped. Increase heightmap_size or target_resolution_m for a larger area.",
+    "No vegetation classes [3, 4, 5] found. Inferring vegetation candidates from height above ground.",
+    "No class 6 building points found; building outputs are empty placeholders.",
+    "No usable lidar road classification found. road_mask.png is empty; TODO: accept OSM/TIGER/GeoJSON roads.",
+    "No class 9 water points found; water outputs are empty placeholders."
+  ],
+  "world_height_m": 2016.0,
+  "world_origin": {
+    "mode": "auto",
+    "x": 6395000.01,
+    "y": 2070000.01,
+    "z_reference_min_elevation_m": 293.4800109863281
+  },
+  "world_width_m": 2016.0
+}

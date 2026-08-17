@@ -1,0 +1,22 @@
+build/
+install/
+log/
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor settings
+.vscode/
+.idea/
+
+# Unreal generated files. Source assets, Config, Content, Plugins, Source,
+# SourceArt, Scripts, and Docs remain tracked.
+/unreal/UnrealTest/Binaries/
+/unreal/UnrealTest/DerivedDataCache/
+/unreal/UnrealTest/Intermediate/
+/unreal/UnrealTest/Saved/
+/unreal/UnrealTest/.vscode/
+/unreal/UnrealTest/*.code-workspace
+/unreal/UnrealTest/Makefile
+/unreal/UnrealTest/Plugins/*/Binaries/
+/unreal/UnrealTest/Plugins/*/Intermediate/

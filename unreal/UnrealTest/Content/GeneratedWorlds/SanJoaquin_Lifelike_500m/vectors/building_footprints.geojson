@@ -1,0 +1,2549 @@
+{
+  "coordinate_space": "local_meters",
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              1006.769,
+              818.446
+            ],
+            [
+              1009.833,
+              858.748
+            ],
+            [
+              995.76,
+              859.818
+            ],
+            [
+              992.696,
+              819.516
+            ],
+            [
+              1006.769,
+              818.446
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 238.0,
+        "bright_gray_fraction": 0.0,
+        "elevated_fraction": 0.618,
+        "height_m": 2.931,
+        "kind": "building",
+        "rectangularity": 0.417,
+        "roof_fraction": 0.676,
+        "roughness_p75_m": 0.511,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              437.281,
+              822.83
+            ],
+            [
+              465.03,
+              805.865
+            ],
+            [
+              469.36,
+              812.949
+            ],
+            [
+              441.612,
+              829.913
+            ],
+            [
+              437.281,
+              822.83
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 129.0,
+        "bright_gray_fraction": 0.806,
+        "elevated_fraction": 0.977,
+        "height_m": 9.5,
+        "kind": "building",
+        "rectangularity": 0.478,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 4.051,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              911.366,
+              818.888
+            ],
+            [
+              919.239,
+              797.318
+            ],
+            [
+              929.634,
+              801.112
+            ],
+            [
+              921.761,
+              822.682
+            ],
+            [
+              911.366,
+              818.888
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 108.0,
+        "bright_gray_fraction": 0.315,
+        "elevated_fraction": 0.694,
+        "height_m": 4.2,
+        "kind": "building",
+        "rectangularity": 0.425,
+        "roof_fraction": 0.954,
+        "roughness_p75_m": 0.408,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -1.843,
+              816.347
+            ],
+            [
+              8.819,
+              799.478
+            ],
+            [
+              16.021,
+              804.03
+            ],
+            [
+              5.359,
+              820.899
+            ],
+            [
+              -1.843,
+              816.347
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 89.0,
+        "bright_gray_fraction": 1.0,
+        "elevated_fraction": 0.933,
+        "height_m": 4.104,
+        "kind": "building",
+        "rectangularity": 0.523,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 0.36,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              949.085,
+              799.789
+            ],
+            [
+              977.497,
+              797.119
+            ],
+            [
+              978.562,
+              808.459
+            ],
+            [
+              950.151,
+              811.129
+            ],
+            [
+              949.085,
+              799.789
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 145.0,
+        "bright_gray_fraction": 0.724,
+        "elevated_fraction": 0.669,
+        "height_m": 4.2,
+        "kind": "building",
+        "rectangularity": 0.446,
+        "roof_fraction": 0.993,
+        "roughness_p75_m": 0.527,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              117.269,
+              711.703
+            ],
+            [
+              130.927,
+              698.943
+            ],
+            [
+              136.565,
+              704.978
+            ],
+            [
+              122.907,
+              717.738
+            ],
+            [
+              117.269,
+              711.703
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 72.0,
+        "bright_gray_fraction": 1.0,
+        "elevated_fraction": 0.972,
+        "height_m": 3.281,
+        "kind": "building",
+        "rectangularity": 0.466,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 1.865,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              479.864,
+              669.93
+            ],
+            [
+              496.551,
+              651.202
+            ],
+            [
+              502.811,
+              656.78
+            ],
+            [
+              486.124,
+              675.508
+            ],
+            [
+              479.864,
+              669.93
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 117.0,
+        "bright_gray_fraction": 0.103,
+        "elevated_fraction": 0.94,
+        "height_m": 7.427,
+        "kind": "building",
+        "rectangularity": 0.556,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 2.856,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              33.488,
+              644.233
+            ],
+            [
+              36.233,
+              658.68
+            ],
+            [
+              26.564,
+              660.517
+            ],
+            [
+              23.819,
+              646.07
+            ],
+            [
+              33.488,
+              644.233
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 90.0,
+        "bright_gray_fraction": 0.833,
+        "elevated_fraction": 1.0,
+        "height_m": 2.824,
+        "kind": "building",
+        "rectangularity": 0.622,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 0.07,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -5.976,
+              637.478
+            ],
+            [
+              8.652,
+              600.664
+            ],
+            [
+              31.292,
+              609.661
+            ],
+            [
+              16.664,
+              646.474
+            ],
+            [
+              -5.976,
+              637.478
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 441.0,
+        "bright_gray_fraction": 0.762,
+        "elevated_fraction": 1.0,
+        "height_m": 4.881,
+        "kind": "building",
+        "rectangularity": 0.457,
+        "roof_fraction": 0.989,
+        "roughness_p75_m": 0.399,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              88.717,
+              604.467
+            ],
+            [
+              90.022,
+              636.859
+            ],
+            [
+              73.129,
+              637.539
+            ],
+            [
+              71.824,
+              605.148
+            ],
+            [
+              88.717,
+              604.467
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 442.0,
+        "bright_gray_fraction": 0.982,
+        "elevated_fraction": 0.993,
+        "height_m": 5.409,
+        "kind": "building",
+        "rectangularity": 0.806,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 0.079,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              36.11,
+              624.383
+            ],
+            [
+              66.668,
+              621.701
+            ],
+            [
+              67.852,
+              635.181
+            ],
+            [
+              37.293,
+              637.864
+            ],
+            [
+              36.11,
+              624.383
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 319.0,
+        "bright_gray_fraction": 0.868,
+        "elevated_fraction": 0.994,
+        "height_m": 4.865,
+        "kind": "building",
+        "rectangularity": 0.768,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 0.085,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              648.493,
+              530.055
+            ],
+            [
+              744.091,
+              413.16
+            ],
+            [
+              782.731,
+              444.759
+            ],
+            [
+              687.133,
+              561.655
+            ],
+            [
+              648.493,
+              530.055
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 4493.0,
+        "bright_gray_fraction": 0.964,
+        "elevated_fraction": 0.992,
+        "height_m": 8.147,
+        "kind": "building",
+        "rectangularity": 0.596,
+        "roof_fraction": 0.988,
+        "roughness_p75_m": 0.094,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              521.466,
+              520.913
+            ],
+            [
+              527.945,
+              437.412
+            ],
+            [
+              557.469,
+              439.703
+            ],
+            [
+              550.99,
+              523.203
+            ],
+            [
+              521.466,
+              520.913
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 1686.0,
+        "bright_gray_fraction": 0.744,
+        "elevated_fraction": 0.996,
+        "height_m": 7.816,
+        "kind": "building",
+        "rectangularity": 0.68,
+        "roof_fraction": 0.963,
+        "roughness_p75_m": 0.079,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              390.274,
+              493.972
+            ],
+            [
+              444.013,
+              440.295
+            ],
+            [
+              465.224,
+              461.53
+            ],
+            [
+              411.485,
+              515.208
+            ],
+            [
+              390.274,
+              493.972
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 1519.0,
+        "bright_gray_fraction": 0.891,
+        "elevated_fraction": 0.982,
+        "height_m": 6.313,
+        "kind": "building",
+        "rectangularity": 0.666,
+        "roof_fraction": 0.974,
+        "roughness_p75_m": 0.073,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              162.435,
+              455.195
+            ],
+            [
+              164.186,
+              474.671
+            ],
+            [
+              153.281,
+              475.651
+            ],
+            [
+              151.53,
+              456.175
+            ],
+            [
+              162.435,
+              455.195
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 154.0,
+        "bright_gray_fraction": 0.981,
+        "elevated_fraction": 1.0,
+        "height_m": 4.565,
+        "kind": "building",
+        "rectangularity": 0.719,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 0.283,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              509.465,
+              420.021
+            ],
+            [
+              510.905,
+              450.888
+            ],
+            [
+              487.209,
+              451.994
+            ],
+            [
+              485.769,
+              421.127
+            ],
+            [
+              509.465,
+              420.021
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 646.0,
+        "bright_gray_fraction": 0.963,
+        "elevated_fraction": 1.0,
+        "height_m": 6.08,
+        "kind": "building",
+        "rectangularity": 0.881,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 0.101,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              117.809,
+              423.684
+            ],
+            [
+              142.745,
+              436.046
+            ],
+            [
+              134.562,
+              452.551
+            ],
+            [
+              109.626,
+              440.188
+            ],
+            [
+              117.809,
+              423.684
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 271.0,
+        "bright_gray_fraction": 0.022,
+        "elevated_fraction": 1.0,
+        "height_m": 4.225,
+        "kind": "building",
+        "rectangularity": 0.529,
+        "roof_fraction": 0.945,
+        "roughness_p75_m": 0.384,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              573.699,
+              418.567
+            ],
+            [
+              605.408,
+              413.052
+            ],
+            [
+              609.22,
+              434.969
+            ],
+            [
+              577.512,
+              440.484
+            ],
+            [
+              573.699,
+              418.567
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 263.0,
+        "bright_gray_fraction": 0.502,
+        "elevated_fraction": 0.962,
+        "height_m": 9.5,
+        "kind": "building",
+        "rectangularity": 0.367,
+        "roof_fraction": 0.951,
+        "roughness_p75_m": 3.703,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              617.185,
+              433.991
+            ],
+            [
+              624.168,
+              412.562
+            ],
+            [
+              640.192,
+              417.784
+            ],
+            [
+              633.209,
+              439.212
+            ],
+            [
+              617.185,
+              433.991
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 187.0,
+        "bright_gray_fraction": 0.845,
+        "elevated_fraction": 0.979,
+        "height_m": 4.013,
+        "kind": "building",
+        "rectangularity": 0.492,
+        "roof_fraction": 0.984,
+        "roughness_p75_m": 0.411,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              620.3,
+              386.982
+            ],
+            [
+              623.627,
+              399.613
+            ],
+            [
+              610.997,
+              402.94
+            ],
+            [
+              607.669,
+              390.309
+            ],
+            [
+              620.3,
+              386.982
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 94.0,
+        "bright_gray_fraction": 0.713,
+        "elevated_fraction": 1.0,
+        "height_m": 9.5,
+        "kind": "building",
+        "rectangularity": 0.551,
+        "roof_fraction": 0.989,
+        "roughness_p75_m": 4.612,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              301.446,
+              339.445
+            ],
+            [
+              324.513,
+              359.494
+            ],
+            [
+              312.557,
+              373.25
+            ],
+            [
+              289.49,
+              353.201
+            ],
+            [
+              301.446,
+              339.445
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 227.0,
+        "bright_gray_fraction": 0.119,
+        "elevated_fraction": 0.982,
+        "height_m": 7.265,
+        "kind": "building",
+        "rectangularity": 0.408,
+        "roof_fraction": 0.956,
+        "roughness_p75_m": 0.698,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              566.862,
+              321.191
+            ],
+            [
+              696.896,
+              317.026
+            ],
+            [
+              698.405,
+              364.138
+            ],
+            [
+              568.371,
+              368.304
+            ],
+            [
+              566.862,
+              321.191
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 4933.0,
+        "bright_gray_fraction": 0.885,
+        "elevated_fraction": 0.998,
+        "height_m": 9.5,
+        "kind": "building",
+        "rectangularity": 0.804,
+        "roof_fraction": 0.955,
+        "roughness_p75_m": 0.244,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              19.951,
+              363.226
+            ],
+            [
+              26.49,
+              339.337
+            ],
+            [
+              38.373,
+              342.589
+            ],
+            [
+              31.834,
+              366.479
+            ],
+            [
+              19.951,
+              363.226
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 189.0,
+        "bright_gray_fraction": 0.884,
+        "elevated_fraction": 1.0,
+        "height_m": 6.103,
+        "kind": "building",
+        "rectangularity": 0.619,
+        "roof_fraction": 0.989,
+        "roughness_p75_m": 0.454,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              144.518,
+              352.605
+            ],
+            [
+              160.024,
+              345.856
+            ],
+            [
+              165.34,
+              358.068
+            ],
+            [
+              149.834,
+              364.817
+            ],
+            [
+              144.518,
+              352.605
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 142.0,
+        "bright_gray_fraction": 0.134,
+        "elevated_fraction": 0.993,
+        "height_m": 9.5,
+        "kind": "building",
+        "rectangularity": 0.63,
+        "roof_fraction": 0.986,
+        "roughness_p75_m": 4.906,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              12.506,
+              324.683
+            ],
+            [
+              17.94,
+              345.604
+            ],
+            [
+              7.288,
+              348.371
+            ],
+            [
+              1.853,
+              327.45
+            ],
+            [
+              12.506,
+              324.683
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 120.0,
+        "bright_gray_fraction": 0.0,
+        "elevated_fraction": 1.0,
+        "height_m": 9.5,
+        "kind": "building",
+        "rectangularity": 0.504,
+        "roof_fraction": 0.9,
+        "roughness_p75_m": 3.226,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              134.143,
+              307.18
+            ],
+            [
+              155.29,
+              330.314
+            ],
+            [
+              138.91,
+              345.287
+            ],
+            [
+              117.763,
+              322.153
+            ],
+            [
+              134.143,
+              307.18
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 289.0,
+        "bright_gray_fraction": 0.785,
+        "elevated_fraction": 0.941,
+        "height_m": 5.082,
+        "kind": "building",
+        "rectangularity": 0.415,
+        "roof_fraction": 0.955,
+        "roughness_p75_m": 0.762,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              170.851,
+              322.163
+            ],
+            [
+              187.68,
+              328.79
+            ],
+            [
+              183.842,
+              338.535
+            ],
+            [
+              167.014,
+              331.909
+            ],
+            [
+              170.851,
+              322.163
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 119.0,
+        "bright_gray_fraction": 0.79,
+        "elevated_fraction": 0.992,
+        "height_m": 5.7,
+        "kind": "building",
+        "rectangularity": 0.628,
+        "roof_fraction": 0.992,
+        "roughness_p75_m": 1.672,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              225.078,
+              322.892
+            ],
+            [
+              238.375,
+              321.288
+            ],
+            [
+              239.637,
+              331.746
+            ],
+            [
+              226.34,
+              333.35
+            ],
+            [
+              225.078,
+              322.892
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 111.0,
+        "bright_gray_fraction": 0.883,
+        "elevated_fraction": 1.0,
+        "height_m": 4.213,
+        "kind": "building",
+        "rectangularity": 0.787,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 0.323,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              158.513,
+              301.171
+            ],
+            [
+              160.523,
+              323.083
+            ],
+            [
+              146.263,
+              324.391
+            ],
+            [
+              144.254,
+              302.479
+            ],
+            [
+              158.513,
+              301.171
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 200.0,
+        "bright_gray_fraction": 0.335,
+        "elevated_fraction": 0.96,
+        "height_m": 9.5,
+        "kind": "building",
+        "rectangularity": 0.635,
+        "roof_fraction": 0.9,
+        "roughness_p75_m": 4.551,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              578.4,
+              266.707
+            ],
+            [
+              676.491,
+              270.035
+            ],
+            [
+              675.11,
+              310.735
+            ],
+            [
+              577.019,
+              307.407
+            ],
+            [
+              578.4,
+              266.707
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 2805.0,
+        "bright_gray_fraction": 0.669,
+        "elevated_fraction": 0.993,
+        "height_m": 9.389,
+        "kind": "building",
+        "rectangularity": 0.702,
+        "roof_fraction": 0.894,
+        "roughness_p75_m": 0.238,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              176.049,
+              276.462
+            ],
+            [
+              179.177,
+              297.304
+            ],
+            [
+              170.902,
+              298.546
+            ],
+            [
+              167.774,
+              277.704
+            ],
+            [
+              176.049,
+              276.462
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 97.0,
+        "bright_gray_fraction": 0.907,
+        "elevated_fraction": 0.99,
+        "height_m": 4.583,
+        "kind": "building",
+        "rectangularity": 0.55,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 1.551,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              833.225,
+              265.265
+            ],
+            [
+              856.919,
+              239.375
+            ],
+            [
+              862.739,
+              244.701
+            ],
+            [
+              839.045,
+              270.592
+            ],
+            [
+              833.225,
+              265.265
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 177.0,
+        "bright_gray_fraction": 0.051,
+        "elevated_fraction": 0.932,
+        "height_m": 6.244,
+        "kind": "building",
+        "rectangularity": 0.639,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 1.585,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              720.62,
+              263.754
+            ],
+            [
+              721.835,
+              96.646
+            ],
+            [
+              775.138,
+              97.034
+            ],
+            [
+              773.923,
+              264.141
+            ],
+            [
+              720.62,
+              263.754
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 5738.0,
+        "bright_gray_fraction": 0.868,
+        "elevated_fraction": 0.997,
+        "height_m": 7.649,
+        "kind": "building",
+        "rectangularity": 0.644,
+        "roof_fraction": 0.91,
+        "roughness_p75_m": 0.043,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              781.273,
+              225.375
+            ],
+            [
+              805.881,
+              176.927
+            ],
+            [
+              838.304,
+              193.395
+            ],
+            [
+              813.697,
+              241.843
+            ],
+            [
+              781.273,
+              225.375
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 958.0,
+        "bright_gray_fraction": 0.733,
+        "elevated_fraction": 0.918,
+        "height_m": 4.113,
+        "kind": "building",
+        "rectangularity": 0.485,
+        "roof_fraction": 0.858,
+        "roughness_p75_m": 0.073,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              829.268,
+              172.781
+            ],
+            [
+              874.093,
+              142.217
+            ],
+            [
+              886.018,
+              159.705
+            ],
+            [
+              841.193,
+              190.27
+            ],
+            [
+              829.268,
+              172.781
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 436.0,
+        "bright_gray_fraction": 0.041,
+        "elevated_fraction": 0.817,
+        "height_m": 4.084,
+        "kind": "building",
+        "rectangularity": 0.38,
+        "roof_fraction": 0.977,
+        "roughness_p75_m": 0.347,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              788.955,
+              153.539
+            ],
+            [
+              818.908,
+              154.734
+            ],
+            [
+              817.816,
+              182.13
+            ],
+            [
+              787.863,
+              180.935
+            ],
+            [
+              788.955,
+              153.539
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 380.0,
+        "bright_gray_fraction": 0.629,
+        "elevated_fraction": 0.953,
+        "height_m": 4.222,
+        "kind": "building",
+        "rectangularity": 0.462,
+        "roof_fraction": 0.853,
+        "roughness_p75_m": 0.064,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              177.892,
+              162.397
+            ],
+            [
+              205.716,
+              152.723
+            ],
+            [
+              210.724,
+              167.127
+            ],
+            [
+              182.9,
+              176.801
+            ],
+            [
+              177.892,
+              162.397
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 270.0,
+        "bright_gray_fraction": 0.0,
+        "elevated_fraction": 0.948,
+        "height_m": 2.814,
+        "kind": "building",
+        "rectangularity": 0.601,
+        "roof_fraction": 0.97,
+        "roughness_p75_m": 0.536,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              787.878,
+              105.932
+            ],
+            [
+              849.034,
+              73.985
+            ],
+            [
+              878.641,
+              130.662
+            ],
+            [
+              817.485,
+              162.609
+            ],
+            [
+              787.878,
+              105.932
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 1574.0,
+        "bright_gray_fraction": 0.687,
+        "elevated_fraction": 0.962,
+        "height_m": 6.358,
+        "kind": "building",
+        "rectangularity": 0.357,
+        "roof_fraction": 0.956,
+        "roughness_p75_m": 0.098,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              785.545,
+              148.838
+            ],
+            [
+              787.113,
+              110.737
+            ],
+            [
+              795.388,
+              111.077
+            ],
+            [
+              793.82,
+              149.178
+            ],
+            [
+              785.545,
+              148.838
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 167.0,
+        "bright_gray_fraction": 0.808,
+        "elevated_fraction": 0.97,
+        "height_m": 4.085,
+        "kind": "building",
+        "rectangularity": 0.529,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 0.914,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              879.446,
+              102.751
+            ],
+            [
+              887.98,
+              116.998
+            ],
+            [
+              881.526,
+              120.864
+            ],
+            [
+              872.992,
+              106.617
+            ],
+            [
+              879.446,
+              102.751
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 75.0,
+        "bright_gray_fraction": 0.0,
+        "elevated_fraction": 0.973,
+        "height_m": 3.942,
+        "kind": "building",
+        "rectangularity": 0.6,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 2.67,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              786.019,
+              97.723
+            ],
+            [
+              806.381,
+              91.832
+            ],
+            [
+              809.447,
+              102.432
+            ],
+            [
+              789.085,
+              108.323
+            ],
+            [
+              786.019,
+              97.723
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 114.0,
+        "bright_gray_fraction": 0.596,
+        "elevated_fraction": 0.886,
+        "height_m": 3.859,
+        "kind": "building",
+        "rectangularity": 0.487,
+        "roof_fraction": 0.965,
+        "roughness_p75_m": 1.321,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              886.067,
+              67.827
+            ],
+            [
+              901.163,
+              76.645
+            ],
+            [
+              895.648,
+              86.086
+            ],
+            [
+              880.552,
+              77.268
+            ],
+            [
+              886.067,
+              67.827
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 114.0,
+        "bright_gray_fraction": 0.746,
+        "elevated_fraction": 0.947,
+        "height_m": 8.402,
+        "kind": "building",
+        "rectangularity": 0.596,
+        "roof_fraction": 0.974,
+        "roughness_p75_m": 3.264,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              856.553,
+              76.991
+            ],
+            [
+              865.924,
+              56.329
+            ],
+            [
+              879.806,
+              62.625
+            ],
+            [
+              870.435,
+              83.287
+            ],
+            [
+              856.553,
+              76.991
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 212.0,
+        "bright_gray_fraction": 0.915,
+        "elevated_fraction": 0.995,
+        "height_m": 4.919,
+        "kind": "building",
+        "rectangularity": 0.613,
+        "roof_fraction": 0.991,
+        "roughness_p75_m": 0.415,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              816.387,
+              67.558
+            ],
+            [
+              831.786,
+              70.706
+            ],
+            [
+              829.859,
+              80.129
+            ],
+            [
+              814.46,
+              76.98
+            ],
+            [
+              816.387,
+              67.558
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 73.0,
+        "bright_gray_fraction": 0.671,
+        "elevated_fraction": 1.0,
+        "height_m": 4.126,
+        "kind": "building",
+        "rectangularity": 0.483,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 2.719,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              869.876,
+              -5.966
+            ],
+            [
+              949.775,
+              60.336
+            ],
+            [
+              940.867,
+              71.072
+            ],
+            [
+              860.967,
+              4.769
+            ],
+            [
+              869.876,
+              -5.966
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 694.0,
+        "bright_gray_fraction": 0.872,
+        "elevated_fraction": 0.984,
+        "height_m": 3.829,
+        "kind": "building",
+        "rectangularity": 0.479,
+        "roof_fraction": 0.937,
+        "roughness_p75_m": 0.241,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              902.312,
+              -4.248
+            ],
+            [
+              959.29,
+              50.309
+            ],
+            [
+              949.871,
+              60.146
+            ],
+            [
+              892.893,
+              5.588
+            ],
+            [
+              902.312,
+              -4.248
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 577.0,
+        "bright_gray_fraction": 0.756,
+        "elevated_fraction": 0.983,
+        "height_m": 3.818,
+        "kind": "building",
+        "rectangularity": 0.537,
+        "roof_fraction": 0.827,
+        "roughness_p75_m": 0.235,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              918.336,
+              -6.928
+            ],
+            [
+              972.25,
+              34.434
+            ],
+            [
+              963.293,
+              46.109
+            ],
+            [
+              909.379,
+              4.747
+            ],
+            [
+              918.336,
+              -6.928
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 447.0,
+        "bright_gray_fraction": 0.866,
+        "elevated_fraction": 0.978,
+        "height_m": 3.777,
+        "kind": "building",
+        "rectangularity": 0.447,
+        "roof_fraction": 0.902,
+        "roughness_p75_m": 0.233,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              944.074,
+              -6.732
+            ],
+            [
+              981.448,
+              21.417
+            ],
+            [
+              972.938,
+              32.716
+            ],
+            [
+              935.564,
+              4.567
+            ],
+            [
+              944.074,
+              -6.732
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 275.0,
+        "bright_gray_fraction": 0.949,
+        "elevated_fraction": 1.0,
+        "height_m": 3.712,
+        "kind": "building",
+        "rectangularity": 0.416,
+        "roof_fraction": 0.993,
+        "roughness_p75_m": 0.282,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              10.946,
+              12.953
+            ],
+            [
+              11.054,
+              29.946
+            ],
+            [
+              2.003,
+              30.003
+            ],
+            [
+              1.895,
+              13.01
+            ],
+            [
+              10.946,
+              12.953
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 76.0,
+        "bright_gray_fraction": 0.75,
+        "elevated_fraction": 0.961,
+        "height_m": 3.477,
+        "kind": "building",
+        "rectangularity": 0.494,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 0.326,
+        "source": "lidar"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              439.194,
+              847.943
+            ],
+            [
+              481.746,
+              869.048
+            ],
+            [
+              475.137,
+              882.374
+            ],
+            [
+              432.585,
+              861.269
+            ],
+            [
+              439.194,
+              847.943
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 357.0,
+        "bright_gray_fraction": 0.88,
+        "elevated_fraction": 0.148,
+        "height_m": 4.2,
+        "kind": "building",
+        "rectangularity": 0.505,
+        "roof_fraction": 0.992,
+        "roughness_p75_m": 0.0,
+        "source": "image"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              325.849,
+              770.772
+            ],
+            [
+              354.279,
+              741.731
+            ],
+            [
+              365.61,
+              752.824
+            ],
+            [
+              337.179,
+              781.865
+            ],
+            [
+              325.849,
+              770.772
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 453.0,
+        "bright_gray_fraction": 0.967,
+        "elevated_fraction": 0.007,
+        "height_m": 4.2,
+        "kind": "building",
+        "rectangularity": 0.703,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 0.0,
+        "source": "image"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              539.723,
+              574.61
+            ],
+            [
+              554.367,
+              582.992
+            ],
+            [
+              549.187,
+              592.042
+            ],
+            [
+              534.543,
+              583.659
+            ],
+            [
+              539.723,
+              574.61
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 107.0,
+        "bright_gray_fraction": 0.626,
+        "elevated_fraction": 0.318,
+        "height_m": 4.2,
+        "kind": "building",
+        "rectangularity": 0.608,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 0.581,
+        "source": "image"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              99.365,
+              453.806
+            ],
+            [
+              115.139,
+              465.038
+            ],
+            [
+              107.544,
+              475.705
+            ],
+            [
+              91.769,
+              464.473
+            ],
+            [
+              99.365,
+              453.806
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 146.0,
+        "bright_gray_fraction": 0.822,
+        "elevated_fraction": 0.26,
+        "height_m": 3.572,
+        "kind": "building",
+        "rectangularity": 0.576,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 0.183,
+        "source": "image"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              123.7,
+              447.183
+            ],
+            [
+              138.863,
+              461.652
+            ],
+            [
+              129.933,
+              471.01
+            ],
+            [
+              114.77,
+              456.54
+            ],
+            [
+              123.7,
+              447.183
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 113.0,
+        "bright_gray_fraction": 0.92,
+        "elevated_fraction": 0.292,
+        "height_m": 3.774,
+        "kind": "building",
+        "rectangularity": 0.417,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 0.195,
+        "source": "image"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              287.83,
+              376.151
+            ],
+            [
+              307.896,
+              375.615
+            ],
+            [
+              308.107,
+              383.503
+            ],
+            [
+              288.041,
+              384.039
+            ],
+            [
+              287.83,
+              376.151
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 89.0,
+        "bright_gray_fraction": 0.73,
+        "elevated_fraction": 0.157,
+        "height_m": 4.2,
+        "kind": "building",
+        "rectangularity": 0.562,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 0.0,
+        "source": "image"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              298.117,
+              315.194
+            ],
+            [
+              299.835,
+              329.357
+            ],
+            [
+              289.256,
+              330.64
+            ],
+            [
+              287.538,
+              316.477
+            ],
+            [
+              298.117,
+              315.194
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 81.0,
+        "bright_gray_fraction": 0.79,
+        "elevated_fraction": 0.642,
+        "height_m": 4.018,
+        "kind": "building",
+        "rectangularity": 0.533,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 0.616,
+        "source": "image"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              37.208,
+              308.376
+            ],
+            [
+              77.804,
+              312.388
+            ],
+            [
+              76.374,
+              326.856
+            ],
+            [
+              35.778,
+              322.844
+            ],
+            [
+              37.208,
+              308.376
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 275.0,
+        "bright_gray_fraction": 0.509,
+        "elevated_fraction": 0.0,
+        "height_m": 4.2,
+        "kind": "building",
+        "rectangularity": 0.464,
+        "roof_fraction": 0.975,
+        "roughness_p75_m": 0.011,
+        "source": "image"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -2.183,
+              274.687
+            ],
+            [
+              35.44,
+              269.446
+            ],
+            [
+              40.088,
+              302.809
+            ],
+            [
+              2.465,
+              308.05
+            ],
+            [
+              -2.183,
+              274.687
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 714.0,
+        "bright_gray_fraction": 0.553,
+        "elevated_fraction": 0.0,
+        "height_m": 4.2,
+        "kind": "building",
+        "rectangularity": 0.558,
+        "roof_fraction": 0.996,
+        "roughness_p75_m": 0.0,
+        "source": "image"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              592.211,
+              242.113
+            ],
+            [
+              628.339,
+              245.966
+            ],
+            [
+              626.316,
+              264.943
+            ],
+            [
+              590.188,
+              261.091
+            ],
+            [
+              592.211,
+              242.113
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 387.0,
+        "bright_gray_fraction": 0.452,
+        "elevated_fraction": 0.145,
+        "height_m": 4.2,
+        "kind": "building",
+        "rectangularity": 0.558,
+        "roof_fraction": 0.979,
+        "roughness_p75_m": 0.03,
+        "source": "image"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              180.962,
+              56.737
+            ],
+            [
+              203.712,
+              81.195
+            ],
+            [
+              184.964,
+              98.634
+            ],
+            [
+              162.214,
+              74.175
+            ],
+            [
+              180.962,
+              56.737
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 391.0,
+        "bright_gray_fraction": 0.882,
+        "elevated_fraction": 0.01,
+        "height_m": 4.2,
+        "kind": "building",
+        "rectangularity": 0.457,
+        "roof_fraction": 0.982,
+        "roughness_p75_m": 0.0,
+        "source": "image"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              805.975,
+              54.597
+            ],
+            [
+              809.076,
+              71.223
+            ],
+            [
+              798.314,
+              73.23
+            ],
+            [
+              795.213,
+              56.604
+            ],
+            [
+              805.975,
+              54.597
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 108.0,
+        "bright_gray_fraction": 0.833,
+        "elevated_fraction": 0.278,
+        "height_m": 4.144,
+        "kind": "building",
+        "rectangularity": 0.583,
+        "roof_fraction": 0.963,
+        "roughness_p75_m": 0.057,
+        "source": "image"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              219.818,
+              -0.154
+            ],
+            [
+              220.492,
+              31.916
+            ],
+            [
+              211.579,
+              32.103
+            ],
+            [
+              210.906,
+              0.033
+            ],
+            [
+              219.818,
+              -0.154
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "area_m2": 160.0,
+        "bright_gray_fraction": 0.588,
+        "elevated_fraction": 0.425,
+        "height_m": 4.2,
+        "kind": "building",
+        "rectangularity": 0.56,
+        "roof_fraction": 1.0,
+        "roughness_p75_m": 0.266,
+        "source": "image"
+      },
+      "type": "Feature"
+    }
+  ],
+  "name": "building_footprints",
+  "type": "FeatureCollection"
+}

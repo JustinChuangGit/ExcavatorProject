@@ -1,0 +1,18 @@
+{
+  "output": "/home/justin/Documents/pointCloudToUnreal/data/exports/GeneratedWorlds/SanJoaquin_Lifelike_500m/pointcloud/SanJoaquin_Lifelike_500m_satellite_colored.pts",
+  "satellite_image": "/home/justin/Documents/pointCloudToUnreal/data/locations/SanJoaquin_Lifelike_500m/satellite/satellite_rgb.png",
+  "format": "ASCII PTS with header: x y z r g b",
+  "units": "LiDAR plugin input meters; importer converts to Unreal centimeters and flips Y",
+  "points_considered": 44462724,
+  "points_inside_world_extent_before_sampling": 19735216,
+  "points_written": 1997842,
+  "max_points": 2000000,
+  "sample_seed": 42,
+  "source_units_to_meters": 0.30480060960121924,
+  "transform": {
+    "array_origin": "row 0 is north/max_y; col 0 is west/min_x",
+    "input_xy_to_local_meters": "local_x=x-world_origin.x, local_y=y-world_origin.y",
+    "input_z_to_local_meters": "local_z=z-min_elevation_m",
+    "unreal_cm": "local_meters * unreal.units_per_meter"
+  }
+}

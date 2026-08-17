@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<!--
+  Articulated RViz model exported from the Leartes Construction Excavator.
+
+  The source meshes are authored in Unreal centimeters with +Y pointing
+  forward.  The visual rotation maps their OBJ coordinates into ROS REP-103
+  (+X forward, +Y left, +Z up), and the 0.01 scale converts cm to m.
+-->
+<robot name="mars_excavator">
+  <material name="construction_yellow">
+    <color rgba="0.92 0.55 0.05 1.0"/>
+  </material>
+  <material name="dark_metal">
+    <color rgba="0.055 0.065 0.075 1.0"/>
+  </material>
+  <material name="hydraulic_metal">
+    <color rgba="0.25 0.27 0.28 1.0"/>
+  </material>
+  <material name="sensor_blue">
+    <color rgba="0.05 0.35 0.95 1.0"/>
+  </material>
+
+  <!-- Chassis frame: the Unreal Blueprint actor origin. -->
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0.655926" rpy="1.570796 0 1.570796"/>
+      <geometry>
+        <mesh filename="package://excavator_bringup/meshes/excavator/SM_Base.obj"
+              scale="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="dark_metal"/>
+    </visual>
+    <visual>
+      <origin xyz="-1.263725 -0.000004 0.421648"
+              rpy="1.570796 0 1.570796"/>
+      <geometry>
+        <mesh filename="package://excavator_bringup/meshes/excavator/SM_BackTires.obj"
+              scale="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="dark_metal"/>
+    </visual>
+    <visual>
+      <origin xyz="0.968169 -0.000002 0.443576"
+              rpy="1.570796 0 1.570796"/>
+      <geometry>
+        <mesh filename="package://excavator_bringup/meshes/excavator/SM_FrontTires.obj"
+              scale="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="dark_metal"/>
+    </visual>
+    <visual>
+      <origin xyz="1.695660 0 0.678694"
+              rpy="1.570796 0 1.570796"/>
+      <geometry>
+        <mesh filename="package://excavator_bringup/meshes/excavator/SM_FrontHull.obj"
+              scale="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="construction_yellow"/>
+    </visual>
+    <visual>
+      <origin xyz="0 0 0.655926" rpy="1.570796 0 1.570796"/>
+      <geometry>
+        <mesh filename="package://excavator_bringup/meshes/excavator/SM_HullHydrolics.obj"
+              scale="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="hydraulic_metal"/>
+    </visual>
+  </link>
+
+  <!-- The cab_link origin is the upper-body swing pivot. -->
+  <link name="cab_link">
+    <visual>
+      <origin xyz="0.301606 0.019647 0.169570"
+              rpy="-1.570796 0 -1.570796"/>
+      <geometry>
+        <mesh filename="package://excavator_bringup/meshes/excavator/SM_MainBody01.obj"
+              scale="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="construction_yellow"/>
+    </visual>
+    <visual>
+      <origin xyz="0.244139 -0.381425 -0.891522"
+              rpy="-1.570796 0 -1.570796"/>
+      <geometry>
+        <mesh filename="package://excavator_bringup/meshes/excavator/SM_Interior01.obj"
+              scale="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="dark_metal"/>
+    </visual>
+    <visual>
+      <origin xyz="0.555726 -0.239990 -1.094273"
+              rpy="-1.570796 0 -1.570796"/>
+      <geometry>
+        <mesh filename="package://excavator_bringup/meshes/excavator/SM_Steering.obj"
+              scale="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="dark_metal"/>
+    </visual>
+  </link>
+  <joint name="cab_swing_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="cab_link"/>
+    <origin xyz="-0.097407 -0.050623 0.752377"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <!-- Main boom, including its base, rear cylinder casing and middle arm. -->
+  <link name="boom_link">
+    <visual>
+      <origin xyz="0.145458 0.031690 0.152013"
+              rpy="-1.570796 0 -1.570796"/>
+      <geometry>
+        <mesh filename="package://excavator_bringup/meshes/excavator/SM_BoomBase01.obj"
+              scale="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="construction_yellow"/>
+    </visual>
+    <visual>
+      <origin xyz="0.825160 0.035808 -1.433061"
+              rpy="-1.570796 0 -1.570796"/>
+      <geometry>
+        <mesh filename="package://excavator_bringup/meshes/excavator/SM_BoomMiddle.obj"
+              scale="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="construction_yellow"/>
+    </visual>
+  </link>
+  <joint name="boom_joint" type="revolute">
+    <parent link="cab_link"/>
+    <child link="boom_link"/>
+    <origin xyz="1.018296 -0.012043 0.551096"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-0.610865" upper="0.610865"
+           effort="100000" velocity="1.0"/>
+  </joint>
+
+  <!-- Dipper/stick. -->
+  <link name="stick_link">
+    <visual>
+      <origin xyz="0.283003 0.035997 -0.012022"
+              rpy="-1.570796 0 -1.570796"/>
+      <geometry>
+        <mesh filename="package://excavator_bringup/meshes/excavator/SM_BoomFront.obj"
+              scale="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="construction_yellow"/>
+    </visual>
+  </link>
+  <joint name="stick_joint" type="revolute">
+    <parent link="boom_link"/>
+    <child link="stick_link"/>
+    <origin xyz="2.099608 -0.004307 1.540264"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-0.959931" upper="0.959931"
+           effort="100000" velocity="1.2"/>
+  </joint>
+
+  <!-- Bucket. Its live four-bar linkage is drawn from Unreal pin frames. -->
+  <link name="bucket_link">
+    <visual>
+      <origin xyz="0.660404 0.036085 0.429208"
+              rpy="-1.570796 0 -1.570796"/>
+      <geometry>
+        <mesh filename="package://excavator_bringup/meshes/excavator/SM_Bucket.obj"
+              scale="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="dark_metal"/>
+    </visual>
+  </link>
+  <joint name="bucket_joint" type="revolute">
+    <parent link="stick_link"/>
+    <child link="bucket_link"/>
+    <origin xyz="0.252770 0.000001 -1.877829"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-1.308997" upper="1.308997"
+           effort="80000" velocity="1.5"/>
+  </joint>
+
+  <link name="lidar_link">
+    <visual>
+      <geometry><cylinder radius="0.11" length="0.13"/></geometry>
+      <material name="sensor_blue"/>
+    </visual>
+  </link>
+  <joint name="lidar_mount" type="fixed">
+    <parent link="cab_link"/>
+    <child link="lidar_link"/>
+    <origin xyz="-0.45 0 2.38"/>
+  </joint>
+
+  <link name="cab_camera_link"/>
+  <joint name="cab_camera_mount" type="fixed">
+    <parent link="cab_link"/>
+    <child link="cab_camera_link"/>
+    <origin xyz="0.25 -0.28 1.75"/>
+  </joint>
+
+  <link name="boom_camera_link"/>
+  <joint name="boom_camera_mount" type="fixed">
+    <parent link="cab_link"/>
+    <child link="boom_camera_link"/>
+    <origin xyz="0.65 -0.55 2.05"/>
+  </joint>
+
+  <link name="bucket_camera_link"/>
+  <joint name="bucket_camera_mount" type="fixed">
+    <parent link="stick_link"/>
+    <child link="bucket_camera_link"/>
+    <origin xyz="0.15 -0.25 -1.35"/>
+  </joint>
+
+  <link name="rear_camera_link"/>
+  <joint name="rear_camera_mount" type="fixed">
+    <parent link="base_link"/>
+    <child link="rear_camera_link"/>
+    <origin xyz="-1.45 0 1.65" rpy="0 0 3.141593"/>
+  </joint>
+</robot>

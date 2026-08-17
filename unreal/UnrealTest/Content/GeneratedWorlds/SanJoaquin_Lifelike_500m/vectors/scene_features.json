@@ -1,0 +1,24 @@
+{
+  "building_count": 62,
+  "cropped_lidar_points": 19735216,
+  "method": "lidar_ndsm_satellite_semantic_fusion_v1",
+  "notes": [
+    "Building placement is image plus LiDAR height, not LAS class 6.",
+    "Image semantics are deterministic color/texture rules because no deep model is installed locally yet.",
+    "The detector is isolated here so a SAM/SegFormer/YOLO satellite model can replace spectral_masks() later."
+  ],
+  "outputs": {
+    "building_instances": "/home/justin/Documents/pointCloudToUnreal/data/exports/GeneratedWorlds/SanJoaquin_Lifelike_500m/instances/building_instances.csv",
+    "road_instances": "/home/justin/Documents/pointCloudToUnreal/data/exports/GeneratedWorlds/SanJoaquin_Lifelike_500m/instances/road_instances.csv",
+    "scene_overlay": "/home/justin/Documents/pointCloudToUnreal/data/exports/GeneratedWorlds/SanJoaquin_Lifelike_500m/previews/scene_feature_overlay.png",
+    "terrain_mesh_obj": "/home/justin/Documents/pointCloudToUnreal/data/exports/GeneratedWorlds/SanJoaquin_Lifelike_500m/terrain/terrain_mesh_253.obj",
+    "tree_instances": "/home/justin/Documents/pointCloudToUnreal/data/exports/GeneratedWorlds/SanJoaquin_Lifelike_500m/instances/tree_instances.csv"
+  },
+  "road_slab_count": 0,
+  "satellite_image_for_inference": "/home/justin/Documents/pointCloudToUnreal/data/exports/GeneratedWorlds/SanJoaquin_Lifelike_500m/satellite/satellite_rgb_z19.png",
+  "terrain_mesh_vertices_per_side": 253,
+  "total_lidar_points_streamed": 44462724,
+  "tree_count": 1004,
+  "unreal_reference_image": "/home/justin/Documents/pointCloudToUnreal/data/exports/GeneratedWorlds/SanJoaquin_Lifelike_500m/satellite/satellite_reference_mirror_x.png",
+  "unreal_reference_image_is_mirror_x": true
+}

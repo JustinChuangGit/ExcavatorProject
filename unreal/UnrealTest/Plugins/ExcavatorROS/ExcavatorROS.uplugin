@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.1.0",
+	"FriendlyName": "Excavator ROS",
+	"Description": "ROS 2 rosbridge transport and control adapter for the excavator simulator.",
+	"Category": "Robotics",
+	"CreatedBy": "Excavator Simulator",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"Plugins": [
+		{
+			"Name": "ChaosVehiclesPlugin",
+			"Enabled": true
+		}
+	],
+	"Modules": [
+		{
+			"Name": "ExcavatorROS",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
